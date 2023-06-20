@@ -1,0 +1,6 @@
+[submodule "Mobile"]
+	path = Mobile
+	url = https://github.com/seemasb/Maskan-Mobile.git
+[submodule "Web"]
+	path = Web
+	url = https://github.com/seemasb/Maskan---GraduationProject.git
