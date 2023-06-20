@@ -4,3 +4,6 @@
 [submodule "Web"]
 	path = Web
 	url = https://github.com/seemasb/Maskan---GraduationProject.git
+[submodule "Server"]
+	path = Server
+	url = https://github.com/khalid-basha/Maskan-Server.git
