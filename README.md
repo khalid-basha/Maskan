@@ -15,11 +15,11 @@ At Maskan, we are committed to serving as a comprehensive real estate solution i
 - ReacJS 18.2.0.
 - React-native 0.71.7.
 - Node.JS 18.14.1.
-- Python 3.8.
-- pip .
+- Python 3.8.10.
+- pip 20.0.2.
 - Django 4.1.7.
 - npm 9.3.1.
-Other packeges and librarys will mentions later.
+Other packages and libraries will mention later.
 
 ## Installation
 
@@ -36,15 +36,22 @@ Make sure you have the following software installed on your machine:
 
 1. Clone the repository.
 ```
+git clone --recurse-submodules https://github.com/khalid-basha/Maskan.git
+```
+or
+```
 git clone https://github.com/khalid-basha/Maskan.git
+git submodule init
+git submodule update
 ```
-2. Install the required dependencies for the server-side:
+2. Install the required dependencies for the server side:
 ```
-cd Maskan-backend
+cd Maskan/Server
 pip install -r /requirements.txt
 ```
   Run migrations to create the database and tables
 ```
+# note that there are some settings that should be added on Maskan/settings.py before this step.
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
@@ -58,7 +65,7 @@ python manage.py runserver
 ```
 3. Install the required dependencies for the web application:
 ```
-cd Maskan-frontend
+cd Maskan/Web
 npm install --force
 ```
   Start the development server.
@@ -69,7 +76,7 @@ Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 4. Install the required dependencies for the mobile application:
 ```
-cd Maskan-mobile
+cd Maskan/Mobile
 npm install
 ```
   Start the development server
